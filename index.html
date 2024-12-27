@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mənim Səhifəm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            display: inline-block;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Xoş Gəlmisiniz</h1>
+    <p>Zəhmət olmasa, e-poçt və şifrə daxil edin:</p>
+    <form>
+        <input type="email" placeholder="E-poçt" id="email" required><br>
+        <input type="password" placeholder="Şifrə" id="password" required><br>
+        <button type="button" onclick="saveData()">Göndər</button>
+    </form>
+
+    <script>
+        function saveData() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            console.log("Email:", email);
+            console.log("Password:", password);
+            alert("Məlumat saxlanıldı!");
+        }
+    </script>
+</body>
+</html>
